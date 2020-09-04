@@ -19,23 +19,12 @@ Here are my posts:
 ## Tags
 
 {% for tag in site.tags %}
-  <h3>{{ tag[0] }}</h3>
-  <ul>
+<button type="button" class="collapsible">{{ tag[0] }}</button>
+<div class="content">
     {% for post in tag[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
-  </ul>
-{% endfor %}
-
-## Categproes
-
-{% for cat in site.categories %}
-  <h3>{{ cat[0] }}</h3>
-  <ul>
-    {% for post in cat[1] %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+</div>
 {% endfor %}
 
 [website]: https://talesofwanders.com
