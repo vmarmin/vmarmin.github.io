@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "My dev environment"
+tag: linux env neovim vscode manjaro i3
 ---
 
 # My dev environment
