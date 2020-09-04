@@ -43,15 +43,15 @@ Here are my posts:
   {% endfor %}
 </ul>
 
-## Tags
+## Content by tag
 
 {% for tag in site.tags %}
-<h3>{{ tag[0] }}</h3>
-<p>
+<details>
+    <summary>{{ tag[0] }}</summary>
     {% for post in tag[1] %}
     <a href="{{ post.url }}">{{ post.title }}</a><br/>
     {% endfor %}
-</p>
+</details>
 {% endfor %}
 
 [website]: https://talesofwanders.com

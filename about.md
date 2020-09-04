@@ -22,3 +22,9 @@ Hi there! My name's Valentin and I'm a Software / Test developer.
 [<img align="left" alt="vmarmin | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 [<img align="left" alt="vmarmin | Instagram" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/instagram.svg" />][instagram]
 
+[website]: https://talesofwanders.com
+[github]: https://github.com/vmarmin
+[twitter]: https://twitter.com/vmarmin
+[youtube]: https://youtube.com/vmarmin
+[instagram]: https://instagram.com/valentin.mrmn
+[linkedin]: https://linkedin.com/in/valentin-marmin
