@@ -19,10 +19,10 @@ Here are my posts:
 ## Tags
 
 {% for tag in site.tags %}
-<summary>{{ tag[0] }}</summary>
+<h3>{{ tag[0] }}</h3>
 <p>
     {% for post in tag[1] %}
-    <a href="{{ post.url }}">{{ post.title }}</a>
+    <a href="{{ post.url }}">{{ post.title }}</a><br/>
     {% endfor %}
 </p>
 {% endfor %}
