@@ -19,12 +19,12 @@ Here are my posts:
 ## Tags
 
 {% for tag in site.tags %}
-<button type="button" class="collapsible">{{ tag[0] }}</button>
-<div class="content">
+<summary>{{ tag[0] }}</summary>
+<p>
     {% for post in tag[1] %}
     <a href="{{ post.url }}">{{ post.title }}</a>
     {% endfor %}
-</div>
+</p>
 {% endfor %}
 
 [website]: https://talesofwanders.com
