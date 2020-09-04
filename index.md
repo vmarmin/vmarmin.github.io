@@ -1,3 +1,8 @@
+---
+layout: default
+title: Home
+---
+
 # Welcome to my dev website!
 
 Hi there! I'm Valentin and I'm a Software / Test developer. This website
