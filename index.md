@@ -38,26 +38,34 @@ contains dev related posts and projects.
 
 ## Posts
 
-Here are my posts:
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+    <h1 class="post-title">
+      <a href="{{ post.url | relative_url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+
+    {{ post.content }}
+  </article>
   {% endfor %}
-</ul>
+</div>
 
-## Content by tag
-
-{% for tag in site.tags %}
-<details>
-    <summary>{{ tag[0] }}</summary>
-    {% for post in tag[1] %}
-    <a href="{{ post.url }}">{{ post.title }}</a><br/>
-    {% endfor %}
-</details>
-{% endfor %}
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-item older" href="{{ paginator.next_page_path | relative_url }}">Older</a>
+  {% else %}
+    <span class="pagination-item older">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-item newer" href="{{ paginator.previous_page_path | prepend: relative_url }}">Newer</a>
+  {% else %}
+    <span class="pagination-item newer">Newer</span>
+  {% endif %}
+</div>
 
 [website]: https://talesofwanders.com
 [github]: https://github.com/vmarmin

@@ -4,8 +4,6 @@ title:  "i3 window manager"
 tags: linux manjaro i3 wm i3wm
 ---
 
-# i3 window manager
-
 ## Why i3?
 
 i3wm is a tiling window manager. As opposed to more traditional window
