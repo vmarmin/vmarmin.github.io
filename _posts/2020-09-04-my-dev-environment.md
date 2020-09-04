@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "My dev environment"
+---
+
 # My dev environment
 
 ## Linux distribution
