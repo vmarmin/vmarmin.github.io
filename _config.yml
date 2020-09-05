@@ -5,6 +5,9 @@ url: https://vmarmin.github.io
 paginate: 1
 baseurl: ""
 permalink: pretty
+pages_list:
+  About: '/about'
+  Archive: '/archive'
 
 # Gems
 plugins:
