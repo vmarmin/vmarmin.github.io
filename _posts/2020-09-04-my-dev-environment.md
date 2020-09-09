@@ -35,36 +35,6 @@ $ sudo pacman -S i3-gaps i3status i3lock yay blurlock
 Maybe get an additional more traditional desktop environment just in case.
 XFCE seems to be worth a try.
 
-### launcher
-
-For now still hesitating between `rofi` and `dmenu` so get both. Personal config
-now uses `rofi`.
-
-```sh
-$ sudo pacman -S rofi dmenu
-```
-
-### terminal
-
-```sh
-$ sudo pacman -S alacritty
-```
-
-### File manager
-
-Get one graphical and one CLI file manager:
-
-```sh
-$ sudo pacman -S vifm nemo
-```
-
-Also get dropbox for file sharing.
-
-### polybar
-
-Default bar is replaced with polybar (config files needed). Polybar is part of
-the AUR so it'll have to be installed with `yay`.
-
 ### Fonts
 
 We will need the usual nerd fonts / ligatured fonts for the setup:

@@ -51,3 +51,50 @@ $ sudo pacman -S i3-gaps i3lock i3status
 When starting your i3 desktop environment for the very first time, you should
 be prompted a warning stating that no i3 configuration has been found, and
 suggest one is automatically generated for you.
+
+### Terminal app
+
+Current terminal preference goes to
+[Alacritty](https://github.com/alacritty/alacritty), a cross platform terminal
+emulator written in rust, wiwth GPU acceleration. It's simple, fast, and easy
+to configure with its yaml config file.
+
+```sh
+sudo pacman -S alacritty
+```
+
+Configuration file can be found at `$HOME/.config/alacritty/alacritty.yml`
+
+### Compositor
+
+I've been using `compton` so far (config in `$HOME/.config/i3`) but the repo
+is apparently stale so have a look at [`picom`](https://github.com/yshui/picom)
+
+### launcher
+
+For now still hesitating between `rofi` and `dmenu` so get both. Personal config
+now uses `rofi`.
+
+```sh
+$ sudo pacman -S rofi dmenu
+```
+
+### File manager
+
+Get one graphical and one CLI file manager:
+
+```sh
+$ sudo pacman -S vifm nemo
+```
+
+Also get dropbox for file sharing.
+
+### polybar
+
+Default bar is replaced with polybar (config files needed). Polybar is part of
+the AUR so it'll have to be installed with `yay`.
+Configuration files and scripts are in `$HOME/.config/polybar`
+
+```
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+```
